@@ -1,0 +1,46 @@
+@import "./variables";
+@import "./theme1";
+@import "./font";
+@import "./component/AnimateFont";
+@import "./component/HobbySpin";
+@import "./component/Nav";
+@import "./component/ScrollDownArrow";
+@import "./component/Carousel";
+@import "./component/Contact";
+@import "./component/Carton.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Oxanium:300,400,700&display=swap");
+
+body {
+  font-family: $font;
+  color: $color1;
+  margin: 0px;
+}
+
+main {
+  position: relative;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 6vw;
+}
+
+p {
+  font-size: 2vw;
+}
+.section {
+  height: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

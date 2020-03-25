@@ -1,0 +1,124 @@
+.circle-expand {
+  width: 60vmin !important;
+  height: 60vmin !important;
+}
+
+.circle {
+  position: relative;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  border: $color1 2px solid;
+  transition: all 0.8s ease-in-out;
+
+  .inner-circle {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    position: absolute;
+    border: $color1 2px solid;
+    background-color: $color3;
+    transition: all 0.2s ease-in-out;
+
+    img {
+      width: 80%;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .top-l {
+    top: 0px;
+    left: 0px;
+  }
+
+  .top-r {
+    top: 0px;
+    right: 0px;
+  }
+  .bot-l {
+    bottom: 0px;
+    left: 0px;
+  }
+  .bot-r {
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+.indicate-circle {
+  width: 40vmin;
+  height: 40vmin;
+  border-radius: 50%;
+  border: $color1 2px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  transition: all 1.2s ease-in-out;
+}
+
+.turn-section {
+  display: flex;
+  width: 80vmin;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  justify-content: space-between;
+  margin-top: 160px;
+}
+
+.turn {
+  width: 10vmin;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.turn-section {
+  opacity: 0;
+}
+
+.show {
+  animation: showAnimation 1s linear 1s forwards;
+}
+
+.hide {
+  opacity: 1;
+  animation: hideAnimation 0.2s linear 0s forwards;
+}
+
+@keyframes showAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideAnimation {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
