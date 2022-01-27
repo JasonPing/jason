@@ -16,7 +16,7 @@
     "react-slick": "^0.25.2",
     "react-visibility-sensor": "^5.1.1",
     "slick-carousel": "^1.8.1",
-    "three": "^0.114.0"
+    "three": "^0.137.0"
   },
   "scripts": {
     "start": "react-scripts start",
